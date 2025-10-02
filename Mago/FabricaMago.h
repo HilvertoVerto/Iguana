@@ -8,7 +8,7 @@
 #include "Mago.h"
 #include "HerramientasMago.h"
 
-class FabricaMago: Fabrica{
+class FabricaMago: public Fabrica{
     public:
         Personaje* crearPersonaje(){
             return new Mago();

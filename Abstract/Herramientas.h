@@ -6,12 +6,14 @@
 
 class Herramientas{
 	private:
-		const float tamanio;
+		const std::vector<float> tamanio;
 		const std::vector<std::string> armas;
 	public:
-		Herramientas(float _tamanio, std::vector<std::string> _armas): tamanio(_tamanio), armas(_armas){}
-		float getTamanio() const{ return tamanio; }
+		Herramientas(std::vector<float> _tamanio, std::vector<std::string> _armas): tamanio(_tamanio), armas(_armas){}
+		
+		std::vector<float> getTamanio() const{ return tamanio; }
 		std::vector<std::string> getArma() const{ return armas; }
+		
 		virtual ~Herramientas() = default;
 };
 

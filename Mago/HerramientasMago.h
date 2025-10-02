@@ -5,7 +5,7 @@
 
 class HerramientasMago: public Herramientas{
     public:
-        HerramientasMago(): Herramientas(2.2, {"Libor", "Vara inecesariamente grande"}){}
+        HerramientasMago(): Herramientas({0.2, 2.2}, {"Libor", "Vara inecesariamente grande"}){}
 };
 
 #endif

@@ -7,7 +7,7 @@
 
 class HerramientasGuerrero: public Herramientas{
 	public:
-		HerramientasGuerrero(): Herramientas(0.8, {"Espata", "Escudo"}){}
+		HerramientasGuerrero(): Herramientas({1.0, 0.5}, {"Espata", "Escudo"}){}
 };
 
 #endif
