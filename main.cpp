@@ -6,17 +6,23 @@
 #include "FamiliasConcretas/Mago/FabricaMago.h"
 #include "FamiliasConcretas/Ladron/FabricaLadron.h"
 
+#include "Utilidades/LimpiarPantalla.h"
+
 #include <iostream>
 #include <cstdlib>
 
 using namespace std;
 int main(){
-    system("clear");
-    cout << "-- Fabrica personajes --" << endl << "1. Guerrero" << endl << "2. Mago" << endl << "3. Ladron" << endl;
     int x = 0;
     Fabrica* fabrica = nullptr;
     Personaje* personaje = nullptr;
     Herramientas* herramientas = nullptr;
+
+    LimpiarPantalla limpiarPantalla;
+
+    limpiarPantalla.limpiar();
+
+    cout << "-- Fabrica personajes --" << endl << "1. Guerrero" << endl << "2. Mago" << endl << "3. Ladron" << endl;
 
     do{
         if(cin >> x && x > 0 && x <= 3){ break; }
@@ -38,7 +44,7 @@ int main(){
     personaje = fabrica->crearPersonaje();
     herramientas = fabrica->crearHerramientas();
 
-    system("clear");
+    limpiarPantalla.limpiar();
 
     cout << "-- Persoaje --" << endl;
     cout << "  Edad: " << personaje->getEdad() << endl << "  Altura: " << personaje->getAltura() << endl << endl;
