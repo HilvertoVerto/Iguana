@@ -3,13 +3,7 @@
 #include "Abstract/Personaje.h"
 
 #include "Guerrero/FabricaGuerrero.h"
-#include "Guerrero/Guerrero.h"
-#include "Guerrero/HerramientasGuerrero.h"
-
 #include "Mago/FabricaMago.h"
-#include "Mago/Mago.h"
-#include "Mago/HerramientasMago.h"
-
 #include "Ladron/FabricaLadron.h"
 
 #include <iostream>
