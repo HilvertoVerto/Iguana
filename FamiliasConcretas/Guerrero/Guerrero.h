@@ -1,7 +1,7 @@
 #ifndef GUERRERO_H
 #define GUERRERO_H
 
-#include "../Abstract/Personaje.h"
+#include "../../Abstract/Personaje.h"
 
 class Guerrero : public Personaje{
 	public:

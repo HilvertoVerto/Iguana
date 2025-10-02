@@ -2,14 +2,16 @@
 #include "Abstract/Herramientas.h"
 #include "Abstract/Personaje.h"
 
-#include "Guerrero/FabricaGuerrero.h"
-#include "Mago/FabricaMago.h"
-#include "Ladron/FabricaLadron.h"
+#include "FamiliasConcretas/Guerrero/FabricaGuerrero.h"
+#include "FamiliasConcretas/Mago/FabricaMago.h"
+#include "FamiliasConcretas/Ladron/FabricaLadron.h"
 
 #include <iostream>
+#include <cstdlib>
 
 using namespace std;
 int main(){
+    system("clear");
     cout << "-- Fabrica personajes --" << endl << "1. Guerrero" << endl << "2. Mago" << endl << "3. Ladron" << endl;
     int x = 0;
     Fabrica* fabrica = nullptr;
@@ -35,6 +37,8 @@ int main(){
 
     personaje = fabrica->crearPersonaje();
     herramientas = fabrica->crearHerramientas();
+
+    system("clear");
 
     cout << "-- Persoaje --" << endl;
     cout << "  Edad: " << personaje->getEdad() << endl << "  Altura: " << personaje->getAltura() << endl << endl;

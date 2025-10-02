@@ -1,9 +1,9 @@
 #ifndef FABRICA_GUERRERO_H
 #define FABRICA_GUERRERO_H
 
-#include "../Abstract/Fabrica.h"
-#include "../Abstract/Herramientas.h"
-#include "../Abstract/Personaje.h"
+#include "../../Abstract/Fabrica.h"
+#include "../../Abstract/Herramientas.h"
+#include "../../Abstract/Personaje.h"
 
 #include "Guerrero.h"
 #include "HerramientasGuerrero.h"

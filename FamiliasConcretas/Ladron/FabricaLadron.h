@@ -1,9 +1,9 @@
 #ifndef FABRICA_LADRON
 #define FABRICA_LADRON
 
-#include "../Abstract/Fabrica.h"
-#include "../Abstract/Personaje.h"
-#include "../Abstract/Herramientas.h"
+#include "../../Abstract/Fabrica.h"
+#include "../../Abstract/Personaje.h"
+#include "../../Abstract/Herramientas.h"
 
 #include "Ladron.h"
 #include "HerramientasLadron.h"

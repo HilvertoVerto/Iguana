@@ -1,7 +1,7 @@
 #ifndef HERRAMIENTAS_MAGO_H
 #define HERRAMIENTAS_MAGO_H
 
-#include "../Abstract/Herramientas.h"
+#include "../../Abstract/Herramientas.h"
 
 class HerramientasMago: public Herramientas{
     public:

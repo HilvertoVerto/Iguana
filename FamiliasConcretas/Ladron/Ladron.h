@@ -1,7 +1,7 @@
 #ifndef LADRON_H
 #define LADRON_H
 
-#include "../Abstract/Personaje.h"
+#include "../../Abstract/Personaje.h"
 
 class Ladron: public Personaje{
     public:

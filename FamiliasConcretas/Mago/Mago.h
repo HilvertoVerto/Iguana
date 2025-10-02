@@ -1,7 +1,7 @@
 #ifndef MAGO_H
 #define MAGO_H
 
-#include "../Abstract/Personaje.h"
+#include "../../Abstract/Personaje.h"
 
 class Mago: public Personaje{
     public:

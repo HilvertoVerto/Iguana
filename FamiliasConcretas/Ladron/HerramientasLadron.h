@@ -1,7 +1,7 @@
 #ifndef HERRAMIENTAS_LADRON_H
 #define HERRAMIENTAS_LADRON_H
 
-#include "../Abstract/Herramientas.h"
+#include "../../Abstract/Herramientas.h"
 
 class HerramientasLadron: public Herramientas{
     public:
