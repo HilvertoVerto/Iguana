@@ -52,5 +52,6 @@ int main(){
     cout << "-- Herramientas --" << endl;
     cout << "  Arma 1: " << herramientas->getArma()[0] << ", mide " << herramientas->getTamanio()[0] << "m" << endl;
     cout << "  Arma 2: " << herramientas->getArma()[1] << ", mide " << herramientas->getTamanio()[1] << "m" << endl;
+
     return 0;
 }

@@ -10,12 +10,8 @@
 
 class FabricaLadron: public Fabrica{
     public:
-        Personaje* crearPersonaje(){
-            return new Ladron();
-        }
-        Herramientas* crearHerramientas(){
-            return new HerramientasLadron();
-        }
+        Personaje* crearPersonaje();
+        Herramientas* crearHerramientas();
 };
 
 #endif

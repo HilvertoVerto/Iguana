@@ -10,12 +10,8 @@
 
 class FabricaMago: public Fabrica{
     public:
-        Personaje* crearPersonaje(){
-            return new Mago();
-        }
-        Herramientas* crearHerramientas(){
-            return new HerramientasMago();
-        }
+        Personaje* crearPersonaje();
+        Herramientas* crearHerramientas();
 };
 
 #endif

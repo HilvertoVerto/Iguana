@@ -12,12 +12,8 @@
 
 class FabricaGuerrero: public Fabrica{
 	public:
-		Personaje* crearPersonaje() override{
-			return new Guerrero();
-		}
-		Herramientas* crearHerramientas() override{
-			return new HerramientasGuerrero();
-		}
+		Personaje* crearPersonaje() override;
+		Herramientas* crearHerramientas() override;
 };
 
 #endif
