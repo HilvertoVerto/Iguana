@@ -22,10 +22,17 @@ int main(){
 
     limpiarPantalla.limpiar();
 
-    cout << "-- Fabrica personajes --" << endl << "1. Guerrero" << endl << "2. Mago" << endl << "3. Ladron" << endl;
-
     do{
+        cout << "-- Fabrica personajes --" << endl << "1. Guerrero" << endl << "2. Mago" << endl << "3. Ladron" << endl;
         if(cin >> x && x > 0 && x <= 3){ break; }
+        else{ 
+            cin.clear();
+            cin.ignore();
+
+            limpiarPantalla.limpiar();
+
+            cout << "Dato invalido" << endl;
+        }
     }while(true);
 
     
@@ -52,6 +59,10 @@ int main(){
     cout << "-- Herramientas --" << endl;
     cout << "  Arma 1: " << herramientas->getArma()[0] << ", mide " << herramientas->getTamanio()[0] << "m" << endl;
     cout << "  Arma 2: " << herramientas->getArma()[1] << ", mide " << herramientas->getTamanio()[1] << "m" << endl;
+
+    cout << endl << "...";
+    cin.ignore();
+    cin.get();
 
     return 0;
 }
