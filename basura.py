@@ -1,1 +1,1 @@
-pritn("iguana" * 1000)
+print("iguana" * 1000)
