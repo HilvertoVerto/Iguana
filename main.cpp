@@ -35,7 +35,7 @@ int main(){
         }
     }while(true);
 
-    
+
     switch(x){
         case 1:
             fabrica = new FabricaGuerrero();
@@ -55,7 +55,7 @@ int main(){
 
     cout << "-- Persoaje --" << endl;
     cout << "  Edad: " << personaje->getEdad() << endl << "  Altura: " << personaje->getAltura() << endl << endl;
-    
+
     cout << "-- Herramientas --" << endl;
     cout << "  Arma 1: " << herramientas->getArma()[0] << ", mide " << herramientas->getTamanio()[0] << "m" << endl;
     cout << "  Arma 2: " << herramientas->getArma()[1] << ", mide " << herramientas->getTamanio()[1] << "m" << endl;
@@ -63,6 +63,8 @@ int main(){
     cout << endl << "...";
     cin.ignore();
     cin.get();
+
+    limpiarPantalla.limpiar();
 
     return 0;
 }
